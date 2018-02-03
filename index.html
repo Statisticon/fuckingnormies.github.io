@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Normies Soundboard</title>
+</head>
+<body>
+
+	<div class="hero-text-box center">
+		<a href="#" onclick="sounds()"><h1>FUCKING NORMIES REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</h1></a>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<audio id="player" autoplay>
+				<source id="sourceMp3" src="" type="audio/mp3" />
+				Your browser does not support the audio element.
+			</audio>
+	</div>
+
+	<script>
+			function sounds(){
+		    
+		    var rand = [
+		        'audio/fuckingnormalfags.mp3',
+		        'audio/fuckingnormies.mp3',
+		        'audio/fuckoffnormieslow.mp3',
+		        'audio/getoutgetoutgetout.mp3',
+		        'audio/getoutgetoutgetoutnormies.mp3',
+		        'audio/getoutofmyboard.mp3',
+		        'audio/getouttttt.mp3',
+		        'audio/getthefuckoffmyboard.mp3',
+		        'audio/godfuckingdamn.mp3',
+		        'audio/nooooormieeee.mp3',
+		        'audio/nooooormieeee2.mp3',
+		        'audio/reeaaarrrggghhh.mp3',
+		        'audio/reeeeee.mp3',
+		        'audio/shakynormies.mp3',
+		        'audio/wooahhhhhhh.mp3',
+		        'audio/wooahhhhhhh2.mp3',];
+
+		    var randSound = rand[Math.floor(Math.random() * rand.length)];
+		    
+		    var player=document.getElementById('player');
+		    var sourceMp3=document.getElementById('sourceMp3');
+
+		    sourceMp3.src='' + randSound + '';
+		    
+		   player.load();
+		   player.play();
+		}
+
+		$('.box').click(sounds);
+		</script>
+</body>
+</html>
